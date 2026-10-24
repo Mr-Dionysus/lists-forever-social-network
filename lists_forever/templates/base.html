@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% block head %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>{% block title %} {% endblock title %} - Lists Forever</title>
+    {% endblock head %}
+  </head>
+  <body>
+    {% include "sidebar.html" %}
+    <div id="content">{% block content %} {% endblock content %}</div>
+    <footer>
+      <small
+        >© Copyright,
+        <a href="https://github.com/Mr-Dionysus">Denis Reznikov</a></small
+      >
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
